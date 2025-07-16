@@ -1,0 +1,386 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</variable>
+    <variable id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</variable>
+  </variables>
+  <block type="s4d_login" id="S=g@9#oSz+eQ]y[XLi0)" x="-401" y="-35">
+    <value name="TOKEN">
+      <shadow type="text" id="yGi@?T_N_#sIkh,Z|58@">
+        <field name="TEXT">1394882834472374272</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="*K9a?=LL%yRm4i[8Dshj" x="-101" y="177">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="Q}Snt4J_uJN,pRO1q?{t">
+        <value name="IF0">
+          <block type="s4d_includes" id="yK:aR[l!1nJuFz7H0Xm:">
+            <value name="TEXT">
+              <shadow type="text" id="64imve/iqVTJR)+W1OXo">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="s4d_message_content" id="+LtpA{9ua/5TvR0|=fV+"></block>
+            </value>
+            <value name="INCLUDES">
+              <shadow type="text" id="00pds_E%jp+i(gaIcBeb">
+                <field name="TEXT">~~set mod channel</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="nJ64+so_9t/jwYM{O~_#">
+            <value name="IF0">
+              <block type="logic_compare" id="=?}p:9V~5nx-g|pDe2Qh">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="s4d_server_owner" id="yM30lD@{y6s1;mATI;eW">
+                    <value name="SERVER">
+                      <block type="s4d_message_guild" id="#LPZ_A)Tkx:6U/bWM1L="></block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="lime_msg_author_attributes" id="fDgB8#vz?}Cp$f=nQ%(8">
+                    <field name="TEXT">Get message author's</field>
+                    <field name="dropdown">ID</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="X4uHrUC~Y0Da]J1ObN!a">
+                <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                <value name="VALUE">
+                  <block type="s4d_message_channel" id="~l|(N.PVt6]X450;f4a["></block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="`Mds.7cJi-BPgvtXW+4@">
+            <value name="IF0">
+              <block type="s4d_includes" id="G;Pc%fHYHD8EftRsyco2">
+                <value name="TEXT">
+                  <shadow type="text" id="64imve/iqVTJR)+W1OXo">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="s4d_message_content" id="ej5h`-x?tMt*ljQDbi_B"></block>
+                </value>
+                <value name="INCLUDES">
+                  <shadow type="text" id="}/rIz~[ufHpB0s1/sojV">
+                    <field name="TEXT">~~start log</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="O.}x#~cXwrWaN%I5~XU@">
+                <value name="IF0">
+                  <block type="logic_compare" id="sylU^oy8F;0APhbR{j*R">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="s4d_server_owner" id="n7F6B;Zxx1_m8,~y^Bf$">
+                        <value name="SERVER">
+                          <block type="s4d_message_guild" id="b)5BZndK6{MH@ed%ex|0"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="lime_msg_author_attributes" id="J6tS(/1V@x#ysV@PTr1r">
+                        <field name="TEXT">Get message author's</field>
+                        <field name="dropdown">ID</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="variables_set" id="q:k+-C0Zx#6fcQ~0%Bc`">
+                    <field name="VAR" id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="UA)}-8o*P9(#c6=QO+Sf">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="u|88h$%;WV3;Vb%C{14z">
+                <value name="IF0">
+                  <block type="s4d_includes" id="^#!$;n9,nX`Td2?wJZTo">
+                    <value name="TEXT">
+                      <shadow type="text" id="64imve/iqVTJR)+W1OXo">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="s4d_message_content" id="1ll1ukh]2epz!)-L_JiY"></block>
+                    </value>
+                    <value name="INCLUDES">
+                      <shadow type="text" id="3t]yYD8sHos=,VP]35Ce">
+                        <field name="TEXT">~~stop log</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="P%trW1x)+=4u*qeSMA-)">
+                    <value name="IF0">
+                      <block type="logic_compare" id="/Wtr!31qo,p^Bftr?Q.?">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="s4d_server_owner" id="AGLO*XP,*A|]u/xuG#~U">
+                            <value name="SERVER">
+                              <block type="s4d_message_guild" id="CHk/OO}ZS-Lt*nCc#-1,"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="lime_msg_author_attributes" id="s=Cb!*P~mIE(/WdXZL$U">
+                            <field name="TEXT">Get message author's</field>
+                            <field name="dropdown">ID</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="variables_set" id="4a^Hby`m,A3e=)Fqkfu:">
+                        <field name="VAR" id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</field>
+                        <value name="VALUE">
+                          <block type="math_number" id="Eun!X0#]e8:#w%lLLQ6Q">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="sr5Px3imb?Db8Eju)Jb)" x="733" y="155">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="LIdSS#~1#K|fU@LBYlH@">
+        <value name="IF0">
+          <block type="logic_compare" id="WR5xwgl!2J1hwL{z.0ox">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="2:cQq+^n8]ybYVD=h])Q">
+                <field name="VAR" id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="qm]9Lo^!cp?.5(vnBbN$">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="_)`VypVpVltk$@3VfT`x">
+            <value name="IF0">
+              <block type="logic_negate" id="VteQr{-r1nCHZ69]W?._">
+                <value name="BOOL">
+                  <block type="text_isEmpty" id="VB)[.)F`9OW)yShYx==j">
+                    <value name="VALUE">
+                      <block type="variables_get" id="Ifna/1@_X?n;(/J|u{QJ">
+                        <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="s4d_send_channel" id="GFZUgyj%y=2QCIZyMJZ;">
+                <value name="CONTENT">
+                  <block type="jg_messages_value_dropdown_content_of_message" id="y9K}a{0M)U:_d3u6d.Q.">
+                    <field name="TYPE">author</field>
+                    <value name="MSG">
+                      <block type="Message" id="BXkNL8;+iKw/(QgqzU*S"></block>
+                    </value>
+                  </block>
+                </value>
+                <value name="CHANNEL">
+                  <block type="variables_get" id="Ce:;1N}1*yh1!1yuuszI">
+                    <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="s4d_send_channel" id="mR=+,E)o.I]2F2[|k[;Y">
+                    <value name="CONTENT">
+                      <block type="jg_messages_value_dropdown_content_of_message" id="#7vPb;*!$+s[it0.~g7g">
+                        <field name="TYPE">channel</field>
+                        <value name="MSG">
+                          <block type="Message" id="bBLNh7`K?WvC)`La51,w"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="CHANNEL">
+                      <block type="variables_get" id="yW_accv+pytiI[ykb/_u">
+                        <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="s4d_send_channel" id="Te!:CP$KU~rwSDZ37%qK">
+                        <value name="CONTENT">
+                          <block type="jg_messages_value_dropdown_content_of_message" id="2NlCw.-3${jh93cc9%Kr">
+                            <field name="TYPE">createdTimestamp</field>
+                            <value name="MSG">
+                              <block type="Message" id="]uk5BwTJ^SwjG-tz{(`?"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="CHANNEL">
+                          <block type="variables_get" id="!)uE{:BWa$/3IJ;lbUD:">
+                            <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="s4d_send_channel" id="Y06X5dsuFp+Z=[]XMvdj">
+                            <value name="CONTENT">
+                              <block type="jg_messages_value_dropdown_content_of_message" id="rgKB-,[PXs;/yGQ6i?$0">
+                                <field name="TYPE">content</field>
+                                <value name="MSG">
+                                  <block type="Message" id="dgN/go=A%ZDk[?LtY_T3"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="CHANNEL">
+                              <block type="variables_get" id=":GqvA~,RV3K#A:lUIJtg">
+                                <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="when_message_is_edited" id="X5l8=Qz9{@FH|/Cn6+DC" x="1236" y="171">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="jGfqaV4;Hvl}M;2@ksNL">
+        <value name="IF0">
+          <block type="logic_compare" id="4U]K*Yt$ZGJREA#SRAYi">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="h[A-bA_LygRFc!w;3d!_">
+                <field name="VAR" id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id=":mh/C89.ef1lXbZ}/Dui">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="gMmv3)62yaX^0U*?F|m+">
+            <value name="IF0">
+              <block type="logic_negate" id="%EQc/QPhD~mFcA:OS*c;">
+                <value name="BOOL">
+                  <block type="text_isEmpty" id="p%/O6oF@9r1X3c0Xq`_H">
+                    <value name="VALUE">
+                      <block type="variables_get" id="fie.%`EW%A9|!)rV8Tq[">
+                        <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="s4d_send_channel" id="@Q_VGSvtL?s4eohv;{-u">
+                <value name="CONTENT">
+                  <block type="jg_messages_value_dropdown_content_of_message" id="!Yf7E6vbZ3@Sq5ZvQV?^">
+                    <field name="TYPE">author</field>
+                    <value name="MSG">
+                      <block type="Message" id="E})hM27J$d;}=5JW|kta"></block>
+                    </value>
+                  </block>
+                </value>
+                <value name="CHANNEL">
+                  <block type="variables_get" id="`ev`n]1WuYGZ@/D,;{[L">
+                    <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="s4d_send_channel" id="JD,~6csUbV/GHCv2D[UQ">
+                    <value name="CONTENT">
+                      <block type="jg_messages_value_dropdown_content_of_message" id="b/XHO:`@NHzVhucoxf7/">
+                        <field name="TYPE">channel</field>
+                        <value name="MSG">
+                          <block type="Message" id="MgYFDO-(3fiMNR1-*-@_"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="CHANNEL">
+                      <block type="variables_get" id="AE++vrB79p/;3L2?=_0V">
+                        <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="s4d_send_channel" id="$OS,%QjI%0=uy_ciiZ{?">
+                        <value name="CONTENT">
+                          <block type="redo_maybe_idk_jg_newmsg_edit_date_timestamp_of_message_edit" id="M_];.?k=kE|MPS6|][Ew">
+                            <field name="TYPE">editedTimestamp</field>
+                          </block>
+                        </value>
+                        <value name="CHANNEL">
+                          <block type="variables_get" id="`H@PC+0%o|6H#_u}GsnB">
+                            <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="s4d_send_channel" id="Obq.mkR~+ickH5:SpbOx">
+                            <value name="CONTENT">
+                              <block type="redo_maybe_idk_jg_newmsg_edit_original_new_message_content" id="!+y#rPQA39/#FN2?6BwN">
+                                <field name="TYPE">old</field>
+                              </block>
+                            </value>
+                            <value name="CHANNEL">
+                              <block type="variables_get" id="k|zsV%B+MF?JWTpgB+6t">
+                                <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="s4d_send_channel" id="+7b)(q.C3Bp3{*g#uZ9d">
+                                <value name="CONTENT">
+                                  <block type="redo_maybe_idk_jg_newmsg_edit_original_new_message_content" id="~JmLp=O!a!n`^Lj`8q~V">
+                                    <field name="TYPE">new</field>
+                                  </block>
+                                </value>
+                                <value name="CHANNEL">
+                                  <block type="variables_get" id="OEt@AB.+#XMa]A;mQzZG">
+                                    <field name="VAR" id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
