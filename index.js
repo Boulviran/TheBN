@@ -86,7 +86,7 @@
     var mod_channel_id, logMessagesQ;
     
     
-    await s4d.client.login('1394911840194269224').catch((e) => {
+    await s4d.client.login('MTM5NDkxMTg0MDE5NDI2OTIyNA.Gkwbot.qOukDqlm4aisM6I_CEtcIGCJGZraIpNHUyy24I').catch((e) => {
             const tokenInvalid = true;
             const tokenError = e;
             if (e.toString().toLowerCase().includes("token")) {
