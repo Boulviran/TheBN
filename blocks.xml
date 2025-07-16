@@ -1,13 +1,16 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
+
+<xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable id="ZUEs;Dl5k+qc.HiX6@on">mod-channel-id</variable>
     <variable id="b/^)eg|.fgTxbD-#!=%[">logMessagesQ</variable>
+    <variable id="bot_token_value">bot_token_value</variable>
   </variables>
   <block type="s4d_login" id="S=g@9#oSz+eQ]y[XLi0)" x="-401" y="-35">
     <value name="TOKEN">
-      <shadow type="text" id="yGi@?T_N_#sIkh,Z|58@">
-        <field name="TEXT">MTM5NDkxMTg0MDE5NDI2OTIyNA.Gkwbot.qOukDqlm4aisM6I_CEtcIGCJGZraIpNHUyy24I</field>
-      </shadow>
+      <block type="variables_get" id="N;dWJW3R,|gW+xJ)vw+!">
+        <field name="VAR" id="bot_token_value">bot_token_value</field>
+      </block>
     </value>
   </block>
   <block type="s4d_on_message" id="*K9a?=LL%yRm4i[8Dshj" x="-101" y="177">
